@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Docker Assignment Form</title>
+  <style>
+    body { font-family: sans-serif; max-width: 480px; margin: 50px auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+    input, textarea, button { width: 100%; margin-bottom: 12px; padding: 10px; box-sizing: border-box; }
+    button { background: #007bff; color: white; border: none; cursor: pointer; border-radius: 4px; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>User Submission Form</h2>
+  <form action="/submit" method="POST">
+    <label>Name:</label>
+    <input type="text" name="name" required placeholder="Enter your name">
+    <label>Email:</label>
+    <input type="email" name="email" required placeholder="Enter your email">
+    <label>Message:</label>
+    <textarea name="message" rows="3" placeholder="Enter message"></textarea>
+    <button type="submit">Send to Flask Backend</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,19 @@
+@"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Backend Response</title>
+  <style>
+    body { font-family: sans-serif; max-width: 480px; margin: 50px auto; padding: 20px; border: 1px solid #28a745; border-radius: 8px; }
+    pre { background: #f4f4f4; padding: 10px; border-radius: 4px; overflow-x: auto; }
+    a { display: inline-block; margin-top: 10px; text-decoration: none; color: #007bff; }
+  </style>
+</head>
+<body>
+  <h2>Backend Response Received</h2>
+  <p><strong>Message:</strong> <%= result.message %></p>
+  <pre><%= JSON.stringify(result, null, 2) %></pre>
+  <a href="/">← Return to Form</a>
+</body>
+</html>
